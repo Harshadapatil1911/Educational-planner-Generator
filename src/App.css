@@ -1,0 +1,102 @@
+/* Container for Main Card */
+.main_container {
+  background-color: #122285; /* New background color */
+  padding: 20px;
+}
+/* Main Card Styles */
+.main_card {
+  background-color: #fbff04;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 5rem auto; /* Center horizontally */
+  max-width: 600px; /* Adjust width as needed */
+}
+
+/* Title Styles */
+.main_card h3 {
+  color: #c41111;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+/* Input Field Styles */
+.fields {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center horizontally */
+  flex-wrap: wrap; /* Allow wrapping */
+  margin-bottom: 20px;
+}
+
+.fields input[type="text"],
+.fields input[type="number"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 200px;
+}
+
+/* Button Styles */
+.fields button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #17a2b8;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.fields button:hover {
+  background-color: #138496;
+}
+
+/* Displayed Data Container */
+.displayData {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffeeba;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px auto; /* Center horizontally and add space between cards */
+  max-width: 600px; /* Adjust width as needed */
+  border: 1px solid #ccc; /* Add border */
+  animation: fadeIn 0.5s ease forwards; /* Fade-in animation */
+}
+
+/* Displayed Data Text Styles */
+.displayData p {
+  margin: 0;
+  font-size: 18px;
+}
+
+/* Displayed Data Button Styles */
+.displayData button {
+  padding: 8px 15px;
+  border: none;
+  background-color: #dbb3cc;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.displayData button:hover {
+  background-color: #218838;
+}
+
+/* Animation for Fade-in Effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
